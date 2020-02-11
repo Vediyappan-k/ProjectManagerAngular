@@ -18,5 +18,6 @@ steps:
   displayName: 'npm install'
 
 - script: |
+    ng config -g cli.warnings.versionMismatch false
     ng build --prod
   displayName: 'npm build'
