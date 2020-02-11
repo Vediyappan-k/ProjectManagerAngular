@@ -42,7 +42,10 @@ debugger;
   }
 
   deleteTask(id: number) {
+    debugger;
+    if (confirm('Are you sure to delete this record')) {
     return this._http.delete(this.baseUrl + '/Delete/' + id);
+    }
   }
 
   endTask(task: TaskViewModel) {

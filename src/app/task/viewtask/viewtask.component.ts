@@ -38,11 +38,14 @@ export class ViewtaskComponent implements OnInit {
   }
 
   getTasks() {
+    debugger;
     this.taskService.getTasks().subscribe(x => this.viewTaskModel.TaskList = x as TaskViewModel[]);
   }
   
   endTask(taskId: number): void {
-    this.taskService.getTasks().subscribe(x => this.viewTaskModel.TaskList = x as TaskViewModel[]);
+    debugger;
+    this.taskService.deleteTask(taskId).subscribe(() => { this.getTasks(); });
+    //this.taskService.getTasks().subscribe(x => this.viewTaskModel.TaskList = x as TaskViewModel[]);
   }
 
   sortTask<T>(propName: keyof TaskViewModel): void {
