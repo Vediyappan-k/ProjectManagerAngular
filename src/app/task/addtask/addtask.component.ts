@@ -54,6 +54,7 @@ export class AddtaskComponent implements OnInit {
   }
 
   OpenUserPopup() {
+    debugger;
     const dialogRef = this.userDialog.open(UserModalComponent, {
       width: '600px'
     });

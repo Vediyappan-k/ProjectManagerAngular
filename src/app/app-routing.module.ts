@@ -6,6 +6,8 @@ import { ProjectComponent } from './project/project.component';
 import { AddtaskComponent } from './task/addtask/addtask.component';
 import { from } from 'rxjs';
 import { ViewtaskComponent } from './task/viewtask/viewtask.component';
+import { HomeComponent } from './home/home.component';
+
 const appRoutes: Routes = [
 
   {
@@ -14,7 +16,12 @@ const appRoutes: Routes = [
     data: { preload: true }
 
   },
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: { preload: true }
 
+  },
   {
     path: 'project',
     component: ProjectComponent,
