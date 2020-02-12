@@ -4,7 +4,6 @@ import { SelectivePreloadingStrategyService } from './selective-preloading-strat
 import { UserComponent } from './user/user.component';
 import { ProjectComponent } from './project/project.component';
 import { AddtaskComponent } from './task/addtask/addtask.component';
-import { from } from 'rxjs';
 import { ViewtaskComponent } from './task/viewtask/viewtask.component';
 import { HomeComponent } from './home/home.component';
 
