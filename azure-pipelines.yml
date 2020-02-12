@@ -19,5 +19,5 @@ steps:
 
 - script: |
     ng config -g cli.warnings.versionMismatch false
-    npm run-script build
+   
   displayName: 'npm build'
