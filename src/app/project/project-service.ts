@@ -18,7 +18,7 @@ export class ProjectService {
       var projectBody = JSON.stringify(project);
       var headerOptions = new Headers({'Content-Type':'application/json'});
       var requestOptions = new RequestOptions({headers : headerOptions});
-      return this._http.post(this.baseUrl, projectBody, requestOptions);
+      return this._http.post(this.baseUrl + '/Create', projectBody, requestOptions);
       // .map(res => res.json()) // ...and calling .json() on the response to return data
       // .catch((error:any) => this._errorHandler(error.error)) //...errors if
       // .subscribe();
